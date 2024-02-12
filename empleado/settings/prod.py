@@ -3,7 +3,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Database
@@ -28,6 +28,7 @@ STATICFILES_DIRS = [
     #BASE_DIR/'static',
     os.path.join(BASE_DIR, "static"),
     ]
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
